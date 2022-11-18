@@ -16,7 +16,7 @@ st.set_page_config(page_title='GAD Analysis', page_icon='images/logo.png',
                    layout='wide', initial_sidebar_state='auto')
 sns.set(rc={'figure.figsize': (20, 15)})
 
-DATA_URL = ('dataset/gad.csv')
+DATA_URL = ('data.csv')
 
 st.markdown('# Graduate Admission Dataset')
 st.markdown('### **Analysis of Graduate Admission Dataset**')
@@ -193,8 +193,3 @@ if st.sidebar.checkbox('View Prediction Model'):
 
     if __name__ == '__main__':
         main()
-
-st.sidebar.subheader('Data Source')
-st.sidebar.info("[Kaggle : graduate-admissions](https://www.kaggle.com/datasets/mohansacharya/graduate-admissions)")
-st.sidebar.subheader('Built with Streamlit')
-st.sidebar.info("https://www.streamlit.io/")
